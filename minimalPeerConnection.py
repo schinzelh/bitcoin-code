@@ -1,7 +1,5 @@
-import struct
 import socket
 
-import utils
 import msgUtils
 
 
@@ -11,6 +9,6 @@ sock.connect(("184.155.9.47", 8333))
 sock.send(msgUtils.getVersionMsg())
 
 while 1:
-    sock.recv(1000) # Throw away data
+    sock.recv(1000)  # Throw away data
     print 'got packet'
     
